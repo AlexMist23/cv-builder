@@ -1,0 +1,8 @@
+.name {
+    font-weight: 400;
+}
+
+.jobDesc {
+    font-weight: 400;
+    color: var(--color-accent);
+}

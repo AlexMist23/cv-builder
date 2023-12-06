@@ -1,0 +1,16 @@
+.contactContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1em;
+  
+    padding: 1em 1.5em;
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: var(--border-radius);
+  }
+  
+  .contactElement {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
