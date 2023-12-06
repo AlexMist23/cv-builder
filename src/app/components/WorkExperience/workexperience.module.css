@@ -1,24 +1,19 @@
 .main {
-    list-style: none;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
 }
 
 .workExpContainer {
     display: flex;
-    margin-bottom: 1em;
-}
-
-.workExpContainer>img {
-    margin: 0.65em 20px
 }
 
 .role {
     color: black;
-    font-weight: 600
 }
 
 .company {
-    font-size: larger;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .date {
@@ -30,9 +25,20 @@
 
 .descLiContainer {
     display: flex;
-    align-items: center;
 }
 
-.descLiContainer>img {
-    margin-right: 1em;
+.ball1{
+    aspect-ratio: 1/1;
+    margin: 0.5em 0.88em;
+    height: 0.75em; 
+    background-color: var(--color-accent);
+    border-radius: 50%; 
+}
+
+.ball2{
+    aspect-ratio: 1/1;
+    margin: 0.4em 0.4em 0 0;
+    height: 0.4em; 
+    background-color: var(--color-accent);
+    border-radius: 50%; 
 }

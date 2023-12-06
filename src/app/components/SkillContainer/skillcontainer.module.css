@@ -2,4 +2,5 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 1em;
+    font-weight: 600;
 }

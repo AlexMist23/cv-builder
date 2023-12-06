@@ -35,9 +35,9 @@ const WorkExperienceElement: React.FC<WorkExp> = ({
   descList,
 }) => {
   return (
-    <ul className={styles.workExpContainer}>
-      <Image src={"/li_ball.svg"} width={10} height={10} alt="" />
-      <li className={styles.workExp}>
+    <li className={styles.workExpContainer}>
+      <div className={styles.ball1}></div>
+      <div className={styles.workExp}>
         <h2 className={styles.role}>{role}</h2>
         <h2 className={styles.company}>{company}</h2>
         <p className={styles.date}>
@@ -46,12 +46,12 @@ const WorkExperienceElement: React.FC<WorkExp> = ({
         <ul className={styles.descUl}>
           {descList.map((desc, i) => (
             <li key={i} className={styles.descLiContainer}>
-              <Image src={"/li_ball.svg"} width={7} height={7} alt="" />
+              <div className={styles.ball2}></div>
               <p className={styles.descLi}>{desc}</p>
             </li>
           ))}
         </ul>
-      </li>
-    </ul>
+      </div>
+    </li>
   );
 };

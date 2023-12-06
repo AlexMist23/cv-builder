@@ -1,10 +1,11 @@
 import styles from "./line.module.css";
-import Image from "next/image";
 
 export const Line = () => {
   return (
-    <div className={styles.line}>
-      <Image src={"/line.svg"} width={100} height={1} alt="" />
+    <div className={styles.lineContainer}>
+      <div className={`${styles.st0} ${styles.line}`}></div>
+      <div className={`${styles.st1} ${styles.line}`}></div>
+      <div className={`${styles.st2} ${styles.line}`}></div>
     </div>
   );
 };
