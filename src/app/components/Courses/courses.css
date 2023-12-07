@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.workExpContainer {
+    display: flex;
+}
+
+.role {
+    color: black;
+}
+
+.company {
+    font-weight: 500;
+}
+
+.date {
+    color: var(--color-accent);
+    font-style: italic;
+    font-size: 0.8em;
+    margin: 0.2em 0
+}
+
+.descLiContainer {
+    display: flex;
+}
+
+.ball1{
+    aspect-ratio: 1/1;
+    margin: 0.5em 0.88em;
+    height: 0.75em; 
+    background-color: var(--color-accent);
+    border-radius: 50%; 
+}
+
+.ball2{
+    aspect-ratio: 1/1;
+    margin: 0.4em 0.4em 0 0;
+    height: 0.4em; 
+    background-color: var(--color-accent);
+    border-radius: 50%; 
+}
