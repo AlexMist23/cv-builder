@@ -1,4 +1,4 @@
-import styles from "./skillcontainer.module.css";
+import styles from "./component.module.css";
 
 interface Props {
   skillsList: string[];

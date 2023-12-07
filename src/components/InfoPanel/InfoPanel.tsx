@@ -1,4 +1,4 @@
-import styles from "./infopanel.module.css";
+import styles from "./component.module.css";
 import Image from "next/image";
 
 export interface ContactInfo {

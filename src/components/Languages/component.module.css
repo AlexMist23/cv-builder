@@ -1,0 +1,40 @@
+.ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+.li {
+    display: grid;
+    grid-template-columns: 12em 12em;
+    gap: 1em;
+}
+
+.balls {
+    display:flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.ball {
+    height: 1em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.full {
+    background-color: var(--color-secondary);
+}
+
+.empty {
+    background-color: var(--color-secondary-lighter);
+}
+
+.name{
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+.desc {
+    color: var(--color-secondary-light)
+}

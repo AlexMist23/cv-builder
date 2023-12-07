@@ -1,4 +1,4 @@
-import styles from "./line.module.css";
+import styles from "./component.module.css";
 
 export const Line = () => {
   return (

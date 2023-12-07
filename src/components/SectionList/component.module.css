@@ -4,15 +4,15 @@
     flex-direction: column;
 }
 
-.workExpContainer {
+.listContainer {
     display: flex;
 }
 
-.role {
+.title {
     color: black;
 }
 
-.company {
+.subtitle {
     font-weight: 500;
 }
 

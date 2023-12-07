@@ -1,4 +1,4 @@
-import styles from "./head.module.css";
+import styles from "./component.module.css";
 
 interface Props {
   info: Info;

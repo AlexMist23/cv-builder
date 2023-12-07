@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 297mm;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 420mm;
+  padding: 3rem;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+@media print {
+  .main {
+    margin: 0;
+    gap: 0;
+  }
+
+  .page {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .main {
+    width: 100%;
+    margin: 0;
+    width: auto;
+  }
+}
