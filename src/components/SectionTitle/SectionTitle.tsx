@@ -10,7 +10,7 @@ interface Props {
 export const SectionTitle: React.FC<Props> = ({ imgSrc, title }) => {
   return (
     <div className={styles.sectorTitle}>
-      <Image src={imgSrc} width={40} height={40} alt="" />
+      <Image src={`/svg/sections/${imgSrc}`} width={40} height={40} alt="" />
       <h2 className={styles.title}>{title}</h2>
     </div>
   );

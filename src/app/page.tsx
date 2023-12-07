@@ -2,20 +2,25 @@
 import styles from "./page.module.css";
 
 /* Components */
-import { Head } from "./components/Head/Head";
-import { InfoPanel } from "./components/InfoPanel/InfoPanel";
-import { SectionTitle } from "./components/SectionTitle/SectionTitle";
-import { Line } from "./components/Line/Line";
-import { SkillContainer } from "./components/SkillContainer/SkillContainer";
 import {
+  Head,
+  InfoPanel,
+  SectionTitle,
+  Line,
+  SkillContainer,
+  Courses,
   WorkExp,
   WorkExperience,
-} from "./components/WorkExperience/WorkExperience";
-import { Course, Courses } from "./components/Courses/Courses";
+} from "@/components";
+
+import type { Course } from "@/components";
 
 export default function Home() {
   const name = "Aleksander Misterkiewicz";
   const jobDesc = "Intern QA Engineer";
+  const phone = process.env.NEXT_PUBLIC_PHONE
+    ? process.env.NEXT_PUBLIC_PHONE
+    : "+00 123 456 789";
   const summary =
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry.";
 
@@ -26,7 +31,7 @@ export default function Home() {
       link: "mailto:aleksander.misterq@gmail.com",
     },
     { icon: "location.svg", content: "Gdansk, Poland", link: null },
-    { icon: "phone.svg", content: "123 456 789", link: "tel:+48573484737" },
+    { icon: "phone.svg", content: phone, link: "tel:+48573484737" },
     {
       icon: "github.svg",
       content: "github.com/AlexMist23",
@@ -39,13 +44,25 @@ export default function Home() {
     },
   ];
   const skillsList: string[] = [
-    "HTML5","CSS","SVG","SQL",
+    "HTML5",
+    "CSS",
+    "SVG",
+    "SQL",
 
-    "JavaScript", "TypeScript", "Python", "PostgreSQL",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "PostgreSQL",
 
-    "Node.js", "Next.js",  "Django","Flask",
+    "Node.js",
+    "Next.js",
+    "Django",
+    "Flask",
 
-    "React", "Redux.js", "JIRA", "Git",
+    "React",
+    "Redux.js",
+    "JIRA",
+    "Git",
   ];
   const workExperienceList: WorkExp[] = [
     {
@@ -69,13 +86,12 @@ export default function Home() {
       ],
     },
   ];
-
   const coursesList: Course[] = [
     {
       title: "JavaScript Specialst: React + Redux",
       company: "CodersLab",
       date: { start: "09/2023", end: "11/2023" },
-      desc: "Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
+      desc: "Subject Scope: Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
     },
     {
       title: "Python Developer",
@@ -99,6 +115,8 @@ export default function Home() {
       <br />
       <WorkExperience workExperienceList={workExperienceList} />
       <Line />
+      <SectionTitle title="COURSES" imgSrc="/courses.svg" />
+      <br />
       <Courses coursesList={coursesList} />
     </main>
   );

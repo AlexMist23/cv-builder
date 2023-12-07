@@ -10,7 +10,6 @@ export interface Course {
 interface Props {
   coursesList: Course[];
 }
-
 export const Courses: React.FC<Props> = ({ coursesList }) => {
   return (
     <ul className={styles.main}>
@@ -37,10 +36,10 @@ const CoursesElement: React.FC<Course> = ({ title, company, date, desc }) => {
         <p className={styles.date}>
           {date.start} - {date.end}
         </p>
-        <li className={styles.descLiContainer}>
+        <div className={styles.descLiContainer}>
           <div className={styles.ball2}></div>
           <p className={styles.descLi}>{desc}</p>
-        </li>
+        </div>
       </div>
     </li>
   );

@@ -14,7 +14,7 @@ export const InfoPanel: React.FC<Props> = ({ contactInfo }) => {
     <div className={styles.contactContainer}>
       {contactInfo.map((element, i) => (
         <div className={styles.contactElement} key={i}>
-          <Image src={`/${element.icon}`} height={20} width={20} alt="" />
+          <Image src={`/svg/info/${element.icon}`} height={20} width={20} alt="" />
           {element.link ? (
             <a href={element.link}>{element.content}</a>
           ) : (

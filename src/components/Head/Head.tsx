@@ -16,3 +16,5 @@ export const Head: React.FC<Props> = ({ name, jobDesc, summary }) => {
     </>
   );
 };
+
+export default Head
