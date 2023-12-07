@@ -4,7 +4,7 @@ import Image from "next/image";
 export interface ContactInfo {
   icon: string;
   content: string;
-  link: string | null;
+  link?: string;
 }
 
 export const InfoPanel = ({ contactInfo }: { contactInfo: ContactInfo[] }) => {

@@ -21,24 +21,30 @@ import {
   workExperienceList,
   coursesList,
   languages,
+  educationList,
 } from "@/lib/data";
 
 export default function Home() {
   const tWorkExperienceList: SectionListProps = workExperienceList.map(
-    (exp) => ({
-      title: exp.role,
-      subtitle: exp.company,
-      date: exp.date,
-      descList: exp.descList,
+    (workExp) => ({
+      title: workExp.role,
+      subtitle: workExp.company,
+      date: workExp.date,
+      descList: workExp.descList,
     })
   );
-
-  const tCoursesList: SectionListProps = coursesList.map((exp) => ({
-    title: exp.title,
-    subtitle: exp.company,
-    date: exp.date,
-    descList: exp.descList,
+  const tCoursesList: SectionListProps = coursesList.map((course) => ({
+    title: course.title,
+    subtitle: course.company,
+    date: course.date,
+    descList: course.descList,
   }));
+  const tEducationList: SectionListProps = educationList.map((exp) => ({
+    title: exp.school,
+    subtitle: exp.desc,
+    date: exp.date,
+  }));
+
   return (
     <main className={styles.main}>
       <div className={styles.page}>
@@ -79,6 +85,7 @@ export default function Home() {
             title="EDUCATION"
             imgSrc="/svg/sections/education.svg"
           />
+          <SectionList list={tEducationList} />
         </div>
       </div>
     </main>

@@ -1,10 +1,4 @@
-import type {
-  Course,
-  ContactInfo,
-  Info,
-  WorkExp,
-  Languages,
-} from "@/components";
+import type { ContactInfo, Info, Languages } from "@/components";
 const phone = process.env.NEXT_PUBLIC_PHONE;
 
 const targetCompany = "";
@@ -22,11 +16,11 @@ export const contactInfo: ContactInfo[] = [
     content: "aleksander.misterq@gmail.com",
     link: "mailto:aleksander.misterq@gmail.com",
   },
-  { icon: "location.svg", content: "Gdansk, Poland", link: null },
+  { icon: "location.svg", content: "Gdansk, Poland" },
   {
     icon: "phone.svg",
     content: phone ? phone : "+00 123 456 789",
-    link: null,
+    link: "tel:" + (phone ? phone : "+00 123 456 789"),
   },
   {
     icon: "github.svg",
@@ -95,24 +89,39 @@ export const coursesList: Course[] = [
     title: "Python Developer",
     company: "CodersLab",
     date: { start: "08/2022", end: "07/2023" },
-    descList: ["Subject Scope: Fundamentals of Python, object-oriented programming in Python, SQL databases, Django framework, basics of JavaScript, final project."],
+    descList: [
+      "Subject Scope: Fundamentals of Python, object-oriented programming in Python, SQL databases, Django framework, basics of JavaScript, final project.",
+    ],
   },
 ];
 export const languages: Languages = [
   { name: "English", level: 4 },
   { name: "Polish", level: 7 },
 ];
+export const educationList: EducationList[] = [
+  {
+    school: "Vocational Technical High School for Telecommunications",
+    desc: "IT profile",
+    date: { start: "09/2017", end: "06/2020" },
+  },
+];
 
 export interface Course {
   title: string;
   company: string;
   date: { start: string; end: string | "Present" };
-  descList: string[];
+  descList?: string[];
 }
 
 export interface WorkExp {
   role: string;
   company: string;
   date: { start: string; end: string | "Present" };
-  descList: string[];
+  descList?: string[];
+}
+
+export interface EducationList {
+  school: string;
+  desc: string;
+  date: { start: string; end: string | "Present" };
 }

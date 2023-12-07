@@ -15,7 +15,7 @@ export const SectionList = ({ list }: Props) => {
   return (
     <ul className={styles.main}>
       {list.map(({ title, subtitle, date, descList }, i) => (
-        <WorkExperienceElement
+        <ListElement
           key={i}
           title={title}
           subtitle={subtitle}
@@ -27,7 +27,7 @@ export const SectionList = ({ list }: Props) => {
   );
 };
 
-const WorkExperienceElement: React.FC<ListElement> = ({
+const ListElement: React.FC<ListElement> = ({
   title,
   subtitle,
   date,
