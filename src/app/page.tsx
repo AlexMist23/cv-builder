@@ -7,7 +7,11 @@ import { InfoPanel } from "./components/InfoPanel/InfoPanel";
 import { SectionTitle } from "./components/SectionTitle/SectionTitle";
 import { Line } from "./components/Line/Line";
 import { SkillContainer } from "./components/SkillContainer/SkillContainer";
-import { WorkExperience } from "./components/WorkExperience/WorkExperience";
+import {
+  WorkExp,
+  WorkExperience,
+} from "./components/WorkExperience/WorkExperience";
+import { Course, Courses } from "./components/Courses/Courses";
 
 export default function Home() {
   const name = "Aleksander Misterkiewicz";
@@ -35,25 +39,15 @@ export default function Home() {
     },
   ];
   const skillsList: string[] = [
-    "HTML5",
-    "CSS",
-    "SQL",
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "PostgreSQL",
-    "Django",
-    "Flask",
-    "Node.js",
-    "React",
-    "Redux.js",
-    "Next.js",
-    "JIRA",
-    "Agile",
-    "Git",
-    
+    "HTML5","CSS","SVG","SQL",
+
+    "JavaScript", "TypeScript", "Python", "PostgreSQL",
+
+    "Node.js", "Next.js",  "Django","Flask",
+
+    "React", "Redux.js", "JIRA", "Git",
   ];
-  const workExperienceList: workExperience[] = [
+  const workExperienceList: WorkExp[] = [
     {
       role: "Intern Quality Assurance Engineer",
       company: "Luxoft",
@@ -75,6 +69,22 @@ export default function Home() {
       ],
     },
   ];
+
+  const coursesList: Course[] = [
+    {
+      title: "JavaScript Specialst: React + Redux",
+      company: "CodersLab",
+      date: { start: "09/2023", end: "11/2023" },
+      desc: "Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
+    },
+    {
+      title: "Python Developer",
+      company: "CodersLab",
+      date: { start: "08/2022", end: "07/2023" },
+      desc: "Subject Scope: Fundamentals of Python, object-oriented programming in Python, SQL databases, Django framework, basics of JavaScript, final project.",
+    },
+  ];
+
   return (
     <main className={styles.main}>
       <Head name={name} jobDesc={jobDesc} summary={summary} />
@@ -89,6 +99,7 @@ export default function Home() {
       <br />
       <WorkExperience workExperienceList={workExperienceList} />
       <Line />
+      <Courses coursesList={coursesList} />
     </main>
   );
 }
@@ -97,11 +108,4 @@ interface contactInfoElement {
   icon: string;
   content: string;
   link: string | null;
-}
-
-interface workExperience {
-  role: string;
-  company: string;
-  date: { start: string; end: string | "Present" };
-  descList: string[];
 }

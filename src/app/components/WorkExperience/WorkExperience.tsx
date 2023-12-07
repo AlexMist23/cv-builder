@@ -1,7 +1,7 @@
 import styles from "./workexperience.module.css";
 import Image from "next/image";
 
-interface WorkExp {
+export interface WorkExp {
   role: string;
   company: string;
   date: { start: string; end: string | "Present" };

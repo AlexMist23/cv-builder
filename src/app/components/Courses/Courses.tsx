@@ -1,6 +1,6 @@
-import styles from "./workexperience.module.css";
+import styles from "./courses.module.css";
 
-interface Course {
+export interface Course {
   title: string;
   company: string;
   date: { start: string; end: string | "Present" };
@@ -8,13 +8,13 @@ interface Course {
 }
 
 interface Props {
-  CoursesList: Course[];
+  coursesList: Course[];
 }
 
-export const WorkExperience: React.FC<Props> = ({ CoursesList }) => {
+export const Courses: React.FC<Props> = ({ coursesList }) => {
   return (
     <ul className={styles.main}>
-      {CoursesList.map(({ title, company, date, desc }, i) => (
+      {coursesList.map(({ title, company, date, desc }, i) => (
         <CoursesElement
           key={i}
           title={title}
@@ -27,12 +27,7 @@ export const WorkExperience: React.FC<Props> = ({ CoursesList }) => {
   );
 };
 
-const CoursesElement: React.FC<Course> = ({
-  title,
-  company,
-  date,
-  desc,
-}) => {
+const CoursesElement: React.FC<Course> = ({ title, company, date, desc }) => {
   return (
     <li className={styles.workExpContainer}>
       <div className={styles.ball1}></div>
