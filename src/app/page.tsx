@@ -13,25 +13,27 @@ import {
   WorkExperience,
 } from "@/components";
 
-import type { Course } from "@/components";
+import type { Course, ContactInfo, Info } from "@/components";
 
 export default function Home() {
-  const name = "Aleksander Misterkiewicz";
-  const jobDesc = "Intern QA Engineer";
   const phone = process.env.NEXT_PUBLIC_PHONE
     ? process.env.NEXT_PUBLIC_PHONE
     : "+00 123 456 789";
-  const summary =
-    "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry.";
 
-  const contactInfo: contactInfoElement[] = [
+  const info: Info = {
+    name: "Aleksander Misterkiewicz",
+    jobDesc: "Intern QA Engineer",
+    summary:
+      "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry.",
+  };
+  const contactInfo: ContactInfo[] = [
     {
       icon: "email.svg",
       content: "aleksander.misterq@gmail.com",
       link: "mailto:aleksander.misterq@gmail.com",
     },
     { icon: "location.svg", content: "Gdansk, Poland", link: null },
-    { icon: "phone.svg", content: phone, link: "tel:+48573484737" },
+    { icon: "phone.svg", content: phone, link: `tel:${phone}` },
     {
       icon: "github.svg",
       content: "github.com/AlexMist23",
@@ -103,7 +105,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Head name={name} jobDesc={jobDesc} summary={summary} />
+      <Head info={info} />
       <br />
       <br />
       <InfoPanel contactInfo={contactInfo} />
@@ -120,10 +122,4 @@ export default function Home() {
       <Courses coursesList={coursesList} />
     </main>
   );
-}
-
-interface contactInfoElement {
-  icon: string;
-  content: string;
-  link: string | null;
 }

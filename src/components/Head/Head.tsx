@@ -1,12 +1,11 @@
 import styles from "./head.module.css";
 
 interface Props {
-  name: string;
-  jobDesc: string;
-  summary: string;
+  info: Info;
 }
 
-export const Head: React.FC<Props> = ({ name, jobDesc, summary }) => {
+export const Head = ({ info }: Props) => {
+  const { name, jobDesc, summary } = info;
   return (
     <>
       <h1 className={styles.name}>{name}</h1>
@@ -17,4 +16,10 @@ export const Head: React.FC<Props> = ({ name, jobDesc, summary }) => {
   );
 };
 
-export default Head
+export default Head;
+
+export interface Info {
+  name: string;
+  jobDesc: string;
+  summary: string;
+}
