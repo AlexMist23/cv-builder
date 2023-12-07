@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.page}>
-        <div>
+        <div className={styles.pageElement}>
           <Head info={info} />
           <br />
           <InfoPanel contactInfo={contactInfo} />
@@ -60,18 +60,20 @@ export default function Home() {
           <br />
           <SkillContainer skillsList={skillsList} />
         </div>
-        <div>
+        <div className={styles.pageElement}>
+          <div className={styles.dotLine} />
           <SectionTitle
             title="WORK EXPERIENCE"
             imgSrc="/svg/sections/work_experience.svg"
           />
           <SectionList list={tWorkExperienceList} />
         </div>
-        <div>
+        <div className={styles.pageElement}>
+          <div className={styles.dotLine} />
           <SectionTitle title="COURSES" imgSrc="/svg/sections/courses.svg" />
           <SectionList list={tCoursesList} />
         </div>
-        <div>
+        <div className={styles.pageElement}>
           <SectionTitle
             title="LANGUAGES"
             imgSrc="/svg/sections/languages.svg"
@@ -80,7 +82,8 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.page}>
-        <div>
+        <div className={styles.pageElement}>
+          <div className={styles.dotLine} />
           <SectionTitle
             title="EDUCATION"
             imgSrc="/svg/sections/education.svg"

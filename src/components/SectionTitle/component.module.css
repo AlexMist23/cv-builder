@@ -5,3 +5,9 @@
     gap: 0.5em;
     margin: 0.5em 0 1em 0;
 }
+
+.sectorTitle img{
+    z-index: 1;
+    border-radius: 50%;
+    outline: 0.3em solid rgb(255, 255, 255);
+}
