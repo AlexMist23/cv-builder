@@ -102,11 +102,15 @@ export default function Home() {
         </div>
 
         <p className={styles.footer}>
-          I hereby give consent for my personal data to be processed by{" "}
-          {targetCompany} for the purpose of conducting recruitment for the
-          position for which I am applying. I also consent to processing of my
-          personal data by {targetCompany} for the purposes of any future
-          recruitment processes.
+          {targetCompany && (
+            <>
+              I hereby give consent for my personal data to be processed by{" "}
+              {targetCompany} for the purpose of conducting recruitment for the
+              position for which I am applying. I also consent to processing of
+              my personal data by {targetCompany} for the purposes of any future
+              recruitment processes.
+            </>
+          )}
         </p>
       </div>
     </main>

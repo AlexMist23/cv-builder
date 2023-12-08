@@ -1,12 +1,12 @@
 import type { ContactInfo, Info, Languages } from "@/components";
 const phone = process.env.NEXT_PUBLIC_PHONE;
 
-export const targetCompany = "XYZ";
+export const targetCompany = "";
 const position = "";
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
-  jobDesc: position ? position : "Junior Front End Developer",
+  jobDesc: position ? position : "Intern Quality Assurance Engineer",
   summary:
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry and continue applying analytical skills to drive innovation and efficiency.",
 };
@@ -80,7 +80,7 @@ export const coursesList: Course[] = [
   {
     title: "JavaScript Specialst: React + Redux",
     company: "CodersLab",
-    date: { start: "09/2023", end: "11/2023" },
+    date: { start: "12/2022", end: "05/2023" },
     descList: [
       "Subject Scope: Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
     ],
