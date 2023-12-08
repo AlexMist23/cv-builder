@@ -137,7 +137,7 @@ export const projectsList: Project[] = [
     repo: "https://github.com/AlexMist23/cv-builder",
     date: { start: "11/2023", end: "Present" },
     descList: [
-      "Presented document is fully crafted by this tool",
+      "Presented document is completely created by this tool",
       "Crafted using TypeScript, Next.js, and React, revolutionizes the traditional resume-building process.",
       "Application utilizes React elements to create a visually stunning and custom-tailored CV experience, elevating the presentation to an art form.",
       "Due to the early phase of development, the tool currently provides only available React components for building usage.",
