@@ -6,7 +6,7 @@ const position = "";
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
-  jobDesc: position ? position : "Intern QA Engineer",
+  jobDesc: position ? position : "Junior Front End Developer",
   summary:
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry and continue applying analytical skills to drive innovation and efficiency.",
 };
