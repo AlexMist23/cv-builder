@@ -1,26 +1,26 @@
 import type { ContactInfo, Info, Languages } from "@/components";
-const phone = process.env.NEXT_PUBLIC_PHONE;
 
-export const targetCompany = "";
-const position = "";
+export const targetCompany = process.env.NEXT_PUBLIC_COMPANY;
+const phone = process.env.NEXT_PUBLIC_PHONE;
+const position = process.env.NEXT_PUBLIC_POSITION;
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
-  jobDesc: position ? position : "Intern Quality Assurance Engineer",
+  jobDesc: position ? position : "Junior Developer",
   summary:
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry and continue applying analytical skills to drive innovation and efficiency.",
 };
 export const contactInfo: ContactInfo[] = [
-  {
-    icon: "email.svg",
-    content: "aleksander.misterq@gmail.com",
-    link: "mailto:aleksander.misterq@gmail.com",
-  },
   { icon: "location.svg", content: "Gdansk, Poland" },
   {
-    icon: "phone.svg",
-    content: phone ? phone : "+00 123 456 789",
-    link: "tel:" + (phone ? phone : "+00 123 456 789"),
+    icon: "linkedin.svg",
+    content: "linkedin.com/in/aleksandermst",
+    link: "https://www.linkedin.com/in/aleksandermst",
+  },
+  {
+    icon: "email.svg",
+    content: "aleksander.misterkiewicz@outlook.com",
+    link: "mailto:aleksander.misterkiewicz@outlook.com",
   },
   {
     icon: "github.svg",
@@ -28,9 +28,14 @@ export const contactInfo: ContactInfo[] = [
     link: "https://github.com/AlexMist23",
   },
   {
-    icon: "linkedin.svg",
-    content: "linkedin.com/in/aleksandermst",
-    link: "https://www.linkedin.com/in/aleksandermst",
+    icon: "phone.svg",
+    content: phone ? phone : "123 456 789",
+    link: phone ? "tel:" + phone : "123 456 789",
+  },
+  {
+    icon: "website.svg",
+    content: "a-misterkiewicz.vercel.app",
+    link: "https://a-misterkiewicz.vercel.app/",
   },
 ];
 export const skillsList: string[] = [
@@ -154,14 +159,12 @@ export interface Course {
   date: { start: string; end: string | "Present" };
   descList?: string[];
 }
-
 export interface WorkExp {
   role: string;
   company: string;
   date: { start: string; end: string | "Present" };
   descList?: string[];
 }
-
 export interface EducationList {
   school: string;
   desc: string;
