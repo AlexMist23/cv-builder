@@ -1,12 +1,10 @@
 import type { ContactInfo, Info, Languages } from "@/components";
 
-export const targetCompany = process.env.NEXT_PUBLIC_COMPANY;
 const phone = process.env.NEXT_PUBLIC_PHONE;
-const position = process.env.NEXT_PUBLIC_POSITION;
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
-  jobDesc: position ? position : "Junior Developer",
+  jobDesc: "Junior Developer",
   summary:
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry and continue applying analytical skills to drive innovation and efficiency.",
 };
