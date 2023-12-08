@@ -1,14 +1,14 @@
 import type { ContactInfo, Info, Languages } from "@/components";
 const phone = process.env.NEXT_PUBLIC_PHONE;
 
-const targetCompany = "";
+export const targetCompany = "XYZ";
 const position = "";
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
   jobDesc: position ? position : "Intern QA Engineer",
   summary:
-    "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry.",
+    "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry and continue applying analytical skills to drive innovation and efficiency.",
 };
 export const contactInfo: ContactInfo[] = [
   {
@@ -52,7 +52,7 @@ export const skillsList: string[] = [
   "React",
   "Redux.js",
   "JIRA",
-  "Git",
+  "Responsive Design",
 ];
 export const workExperienceList: WorkExp[] = [
   {
@@ -60,10 +60,10 @@ export const workExperienceList: WorkExp[] = [
     company: "Luxoft",
     date: { start: "09/2023", end: "11/2023" },
     descList: [
-      "Conducted comprehensive review and analysis of digital maps data, ensuring accuracy and adherence to specifications",
-      "Proficiently annotated 2D/3D images and videos using specialized tools and database systems",
-      "Generated detailed reports on data analysis and review results, contributing to process optimization",
-      "Collaborated closely with team members and developers to ensure seamless communication and project alignment",
+      "Conducted a comprehensive review and analysis of digital maps data, achieving an accuracy percentage surpassing that of the group, demonstrating meticulous attention to detail and commitment to quality assurance.",
+      "Proficiently annotated 2D/3D images and videos using specialized tools and database systems, contributing to the enhancement of data accuracy and integrity.",
+      "Generated detailed reports on data analysis and review results, contributing significantly to process optimization and improvement strategies.",
+      "Collaborated closely with team members and developers to ensure seamless communication, fostering project alignment and efficient workflow within an Agile environment.",
     ],
   },
   {
@@ -105,6 +105,33 @@ export const educationList: EducationList[] = [
     date: { start: "09/2017", end: "06/2020" },
   },
 ];
+export const projectsList: Project[] = [
+  {
+    name: "Weather App",
+    techStack: ["TypeScript", "Next.js", "React", "Redux"],
+    demo: "https://weather-appx.vercel.app",
+    repo: "https://github.com/AlexMist23/weather-app",
+    date: { start: "08/2023", end: "Present" },
+    descList: [
+      "This application is built using Next.js, React, and React-Redux, leveraging the power of these technologies to provide weather information.",
+      "It fetches real-time weather data from the OpenWeatherMap API (https://openweathermap.org/), managing and distributing the data seamlessly through Redux for efficient rendering within React components on pages served by Next.js.",
+      "The Weather App combines functionality with an aesthetically pleasing, responsive design.",
+    ],
+  },
+  {
+    name: "Cinema Service",
+    techStack: ["Python", "Django", "PostgreSQL"],
+    repo: "https://github.com/AlexMist23/django_cinema_app",
+    date: { start: "11/2022", end: "02/2023" },
+    descList: [
+      "The Cinema Service project, developed in Python using the Django framework, showcases a blend of backend and frontend expertise",
+      "Utilizing Django with a PostgreSQL database, this project demonstrates my proficiency across various languages and technologies.",
+      "The platform introduces a comprehensive cinema web application enabling users to access movie schedules across multiple locations.",
+      "The system includes a robust login system integrated with Django's powerful model structures within PostgreSQL, ensuring secure and efficient data management.",
+      "Key features include a Repertoire Overview where clients can access and view schedules for cinemas across multiple locations, Detailed Information allowing users to explore specific cinemas, movies, and showtimes, and a Ticket Reservation system enabling users to select seats and reserve tickets for specific movies at preferred showtimes, enhancing the user experience and convenience. This project underscores my proficiency in full-stack development, emphasizing backend data management, frontend design, and user interaction within a dynamic web application.",
+    ],
+  },
+];
 
 export interface Course {
   title: string;
@@ -124,4 +151,12 @@ export interface EducationList {
   school: string;
   desc: string;
   date: { start: string; end: string | "Present" };
+}
+export interface Project {
+  name: string;
+  techStack: string[];
+  demo?: string;
+  repo: string;
+  date: { start: string; end: string | "Present" };
+  descList: string[];
 }

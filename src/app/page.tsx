@@ -9,6 +9,7 @@ import {
   SkillContainer,
   Languages,
   SectionList,
+  ProjectsList,
 } from "@/components";
 
 import type { SectionListProps } from "@/components";
@@ -22,6 +23,8 @@ import {
   coursesList,
   languages,
   educationList,
+  projectsList,
+  targetCompany,
 } from "@/lib/data";
 
 export default function Home() {
@@ -73,13 +76,6 @@ export default function Home() {
           <SectionTitle title="COURSES" imgSrc="/svg/sections/courses.svg" />
           <SectionList list={tCoursesList} />
         </div>
-        <div className={styles.pageElement}>
-          <SectionTitle
-            title="LANGUAGES"
-            imgSrc="/svg/sections/languages.svg"
-          />
-          <Languages languages={languages} />
-        </div>
       </div>
       <div className={styles.page}>
         <div className={styles.pageElement}>
@@ -90,6 +86,27 @@ export default function Home() {
           />
           <SectionList list={tEducationList} />
         </div>
+        <div className={styles.pageElement}>
+          <div className={styles.dotLine} />
+          <SectionTitle title="PROJECTS" imgSrc="/svg/sections/projects.svg" />
+          <ProjectsList list={projectsList} />
+        </div>
+
+        <div className={styles.pageElement}>
+          <SectionTitle
+            title="LANGUAGES"
+            imgSrc="/svg/sections/languages.svg"
+          />
+          <Languages languages={languages} />
+        </div>
+
+        <p className={styles.footer}>
+          I hereby give consent for my personal data to be processed by
+          {targetCompany} for the purpose of conducting recruitment for the
+          position for which I am applying. I also consent to processing of my
+          personal data by {targetCompany} for the purposes of any future
+          recruitment processes.
+        </p>
       </div>
     </main>
   );

@@ -8,12 +8,12 @@
     display: flex;
 }
 
-.title {
+.name {
     color: black;
     font-size: 1.5em;
 }
 
-.subtitle {
+.techStack {
     font-weight: 500;
     font-size: 1.3em;
 }
@@ -45,6 +45,14 @@
     height: 0.4em;
     background-color: var(--color-accent);
     border-radius: 50%;
+}
+
+.a {
+    color: var(--color-accent);
+}
+
+.linkContainer {
+    white-space: 1em;
 }
 
 .descContainer {

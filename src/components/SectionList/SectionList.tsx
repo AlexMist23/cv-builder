@@ -27,12 +27,7 @@ export const SectionList = ({ list }: Props) => {
   );
 };
 
-const ListElement: React.FC<ListElement> = ({
-  title,
-  subtitle,
-  date,
-  descList,
-}) => {
+const ListElement = ({ title, subtitle, date, descList }: ListElement) => {
   return (
     <li className={styles.listContainer}>
       <div className={styles.ball1}></div>
@@ -42,7 +37,7 @@ const ListElement: React.FC<ListElement> = ({
         <p className={styles.date}>
           {date.start} - {date.end}
         </p>
-        <ul>
+        <ul className={styles.descContainer}>
           {descList &&
             descList.map((desc, i) => (
               <li key={i} className={styles.descLiContainer}>

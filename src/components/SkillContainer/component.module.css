@@ -1,6 +1,6 @@
 .skillsContainer {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, minmax(0, 2fr));
     row-gap: 1em;
     font-weight: 600;
 }
