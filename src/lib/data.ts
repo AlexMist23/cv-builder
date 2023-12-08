@@ -11,27 +11,30 @@ export const info: Info = {
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking opportunities to advance within the software development industry and continue applying analytical skills to drive innovation and efficiency.",
 };
 export const contactInfo: ContactInfo[] = [
-  { icon: "location.svg", content: "Gdansk, Poland" },
+  {
+    icon: "email.svg",
+    content: "aleksander.misterkiewicz@outlook.com",
+    link: "mailto:aleksander.misterkiewicz@outlook.com",
+  },
+
   {
     icon: "linkedin.svg",
     content: "linkedin.com/in/aleksandermst",
     link: "https://www.linkedin.com/in/aleksandermst",
   },
   {
-    icon: "email.svg",
-    content: "aleksander.misterkiewicz@outlook.com",
-    link: "mailto:aleksander.misterkiewicz@outlook.com",
+    icon: "phone.svg",
+    content: phone ? phone : "123 456 789",
+    link: phone ? "tel:" + phone : "123 456 789",
   },
   {
     icon: "github.svg",
     content: "github.com/AlexMist23",
     link: "https://github.com/AlexMist23",
   },
-  {
-    icon: "phone.svg",
-    content: phone ? phone : "123 456 789",
-    link: phone ? "tel:" + phone : "123 456 789",
-  },
+
+  { icon: "location.svg", content: "Gdansk, Poland" },
+
   {
     icon: "website.svg",
     content: "a-misterkiewicz.vercel.app",
