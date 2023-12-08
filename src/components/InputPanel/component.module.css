@@ -1,0 +1,25 @@
+.div {
+    z-index: 2;
+    position: absolute;
+    align-self: end;
+
+    margin: 1rem;
+    padding: 0.5em;
+    outline: var(--color-secondary) solid;
+
+    background-color: var(--color-secondary);
+
+    display: grid;
+    grid-template-columns: auto 15em;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+
+    font-size: 1.5em;
+    color: white;
+}
+
+@media print {
+    .div {
+        display: none;
+    }
+}

@@ -4,7 +4,7 @@ interface Props {
   data?: string;
 }
 
-export const Head = ({ data }: Props) => {
+export const Template = ({ data }: Props) => {
   return <>
   </>;
 };

@@ -6,3 +6,4 @@ export * from "./SkillContainer/SkillContainer";
 export * from "./Languages/Languages";
 export * from "./SectionList/SectionList";
 export * from "./ProjectsList/ProjectsList";
+export * from "./InputPanel/InputPanel";

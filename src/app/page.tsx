@@ -10,6 +10,7 @@ import {
   Languages,
   SectionList,
   ProjectsList,
+  InputPanel,
 } from "@/components";
 
 import type { SectionListProps } from "@/components";
@@ -50,7 +51,9 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      {process.env.NEXT_PUBLIC_IS_ADMIN && <InputPanel />}
       <div className={styles.page}>
+        
         <div className={styles.pageElement}>
           <Head info={info} />
           <br />
