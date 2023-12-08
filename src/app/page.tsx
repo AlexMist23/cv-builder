@@ -83,6 +83,7 @@ export default function Home() {
           <SectionTitle
             title="EDUCATION"
             imgSrc="/svg/sections/education.svg"
+            lineHide={true}
           />
           <SectionList list={tEducationList} />
         </div>
@@ -101,7 +102,7 @@ export default function Home() {
         </div>
 
         <p className={styles.footer}>
-          I hereby give consent for my personal data to be processed by
+          I hereby give consent for my personal data to be processed by{" "}
           {targetCompany} for the purpose of conducting recruitment for the
           position for which I am applying. I also consent to processing of my
           personal data by {targetCompany} for the purposes of any future

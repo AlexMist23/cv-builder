@@ -128,7 +128,22 @@ export const projectsList: Project[] = [
       "Utilizing Django with a PostgreSQL database, this project demonstrates my proficiency across various languages and technologies.",
       "The platform introduces a comprehensive cinema web application enabling users to access movie schedules across multiple locations.",
       "The system includes a robust login system integrated with Django's powerful model structures within PostgreSQL, ensuring secure and efficient data management.",
-      "Key features include a Repertoire Overview where clients can access and view schedules for cinemas across multiple locations, Detailed Information allowing users to explore specific cinemas, movies, and showtimes, and a Ticket Reservation system enabling users to select seats and reserve tickets for specific movies at preferred showtimes, enhancing the user experience and convenience. This project underscores my proficiency in full-stack development, emphasizing backend data management, frontend design, and user interaction within a dynamic web application.",
+    ],
+  },
+  {
+    name: "CV Builder",
+    techStack: ["TypeScript", "Next.js", "React"],
+    demo: "https://cv-aleksander-misterkiewicz.vercel.app",
+    repo: "https://github.com/AlexMist23/cv-builder",
+    date: { start: "11/2023", end: "Present" },
+    descList: [
+      "Presented document is fully crafted by this tool",
+      "Crafted using TypeScript, Next.js, and React, revolutionizes the traditional resume-building process.",
+      "Application utilizes React elements to create a visually stunning and custom-tailored CV experience, elevating the presentation to an art form.",
+      "Due to the early phase of development, the tool currently provides only available React components for building usage.",
+      "In the planned futures, a user interface will be provided to further enhance the user experience.",
+      "This approach grants full control over color schemes, layout, and design, resulting in a beautifully presented CV seamlessly fitting within selected number of A3/A4-sized pages.",
+      "The CV Builder showcases my expertise in leveraging modern web technologies to create intuitive and visually engaging applications, offering a unique and personalized approach to resume creation.",
     ],
   },
 ];
