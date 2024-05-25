@@ -61,9 +61,9 @@ export default function Index() {
           <div className={styles.pageElement}>
             <Head
               info={{
-                name: t("name"),
-                jobDesc: t("jobDesc"),
-                summary: t("summaryy"),
+                name: t("info.name"),
+                jobDesc: t("info.jobDesc"),
+                summary: t("info.summary"),
               }}
               profileImgUrl="/webp/cv-img.webp"
             />
