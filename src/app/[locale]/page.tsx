@@ -2,6 +2,7 @@
 
 /* CSS */
 import styles from "@/styles/page.module.css";
+import { useTranslations } from "next-intl";
 
 /* Components */
 import {
@@ -30,9 +31,8 @@ import {
 } from "@/lib/data";
 import { selectAdminData, useSelector } from "@/lib/redux";
 
-export default function Home() {
-  const targetCompany = useSelector(selectAdminData).formData.company;
-
+export default function Index() {
+  const t = useTranslations("Index");
   const tWorkExperienceList: SectionListProps = workExperienceList.map(
     (workExp) => ({
       title: workExp.role,
@@ -59,7 +59,14 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.page}>
           <div className={styles.pageElement}>
-            <Head info={info} profileImgUrl="/webp/cv-img.webp" />
+            <Head
+              info={{
+                name: t("name"),
+                jobDesc: t("jobDesc"),
+                summary: t("summaryy"),
+              }}
+              profileImgUrl="/webp/cv-img.webp"
+            />
             <br />
             <InfoPanel contactInfo={contactInfo} />
             <SectionTitle
