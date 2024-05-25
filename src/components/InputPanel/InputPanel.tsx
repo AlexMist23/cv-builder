@@ -26,6 +26,7 @@ export const InputPanel = () => {
       <div className={styles.inputsContainer}>
         <span className={styles.span}>Position:</span>
         <input
+          title="position"
           name="position"
           type="text"
           value={form.position}
@@ -35,6 +36,7 @@ export const InputPanel = () => {
 
         <span className={styles.span}>Company:</span>
         <input
+          title="company"
           name="company"
           type="text"
           value={form.company}

@@ -1,9 +1,27 @@
+.head {
+  height: 12em;
+  position: relative;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
 .name {
-    font-size: 2.5em;
-    font-weight: 400;
+  font-size: 2.5em;
+  font-weight: 400;
 }
 
 .jobDesc {
-    font-weight: 400;
-    color: var(--color-accent);
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+.infoContainer {
+  height: 100%;
+}
+
+.cvPicContainer {
+}
+.cvPic {
+  height: 100%;
 }
