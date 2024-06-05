@@ -3,7 +3,7 @@ import type { ContactInfo, Info, Languages } from "@/components";
 const phone = process.env.NEXT_PUBLIC_PHONE;
 
 export const info: Info = {
-  name: "Aleksander Misterkiewicz",
+  name: "Misterkiewicz Aleksander",
   jobDesc: "QA Tester",
   summary:
     "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking .",
@@ -151,6 +151,8 @@ export const projectsList: Project[] = [
     ],
   },
 ];
+export const clause: string =
+  "I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).";
 
 export interface Course {
   title: string;
