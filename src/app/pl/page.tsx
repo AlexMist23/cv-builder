@@ -2,7 +2,6 @@
 
 /* CSS */
 import styles from "@/styles/page.module.css";
-import { useTranslations } from "next-intl";
 
 /* Components */
 import {
@@ -28,11 +27,9 @@ import {
   languages,
   educationList,
   projectsList,
-} from "@/lib/data";
-import { selectAdminData, useSelector } from "@/lib/redux";
+} from "@/lib/data/pl";
 
 export default function Index() {
-  const t = useTranslations("Index");
   const tWorkExperienceList: SectionListProps = workExperienceList.map(
     (workExp) => ({
       title: workExp.role,
@@ -61,9 +58,9 @@ export default function Index() {
           <div className={styles.pageElement}>
             <Head
               info={{
-                name: t("info.name"),
-                jobDesc: t("info.jobDesc"),
-                summary: t("info.summary"),
+                name: info.name,
+                jobDesc: info.jobDesc,
+                summary: info.summary,
               }}
               profileImgUrl="/webp/cv-img.webp"
             />
