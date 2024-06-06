@@ -66,9 +66,17 @@ export const skillsList: string[] = [
 ];
 export const workExperienceList: WorkExp[] = [
   {
+    role: "Operator SMT",
+    company: "Aptiv",
+    date: { start: "2024-01", end: "Present" },
+    descList: [
+      "Zarządzanie, kontrolowanie jakości i usprawnianie procesu produkcyjnego SMT",
+    ],
+  },
+  {
     role: "Intern Quality Assurance Engineer",
     company: "Luxoft",
-    date: { start: "09/2023", end: "12/2023" },
+    date: { start: "2023-09", end: "2023-12" },
     descList: [
       "Przeprowadziłem kompleksowy przegląd i analizę danych map cyfrowych, wykazując skrupulatną uwagę do szczegółów i zaangażowanie w zapewnienie jakości.",
       "Anotacja obrazów 2D/3D i filmów przy użyciu specjalistycznych narzędzi i systemów baz danych, przyczyniając się do poprawy dokładności i integralności danych.",
@@ -78,7 +86,7 @@ export const workExperienceList: WorkExp[] = [
   {
     role: "QA Tester",
     company: "QLOC",
-    date: { start: "08/2022", end: "07/2023" },
+    date: { start: "2022-08", end: "2023-08" },
     descList: [
       "Wykonywanie testów oprogramowania: sanity, performance, functional, regression",
       "Odgrywanie kluczowej roli w procesach raportowania problemów i informacji zwrotnej do klientów, ułatwiając ciągłe doskonalenie produktu, pracy zespołu w środowisku Agile.",
@@ -87,9 +95,9 @@ export const workExperienceList: WorkExp[] = [
 ];
 export const coursesList: Course[] = [
   {
-    title: "JavaScript Specialst: React + Redux",
+    title: "JavaScript Specialist: React + Redux",
     company: "CodersLab",
-    date: { start: "12/2022", end: "05/2023" },
+    date: { start: "2022-12", end: "2023-05" },
     descList: [
       "Zaawansowany JavaScript, projekt aplikacji jednostronicowej (SPA) z użyciem React Router, biblioteki React Redux i REST API.",
     ],
@@ -97,7 +105,7 @@ export const coursesList: Course[] = [
   {
     title: "Python Developer",
     company: "CodersLab",
-    date: { start: "08/2022", end: "07/2023" },
+    date: { start: "2022-08", end: "2023-07" },
     descList: [
       "Podstawy Pythona, programowanie obiektowe, bazy danych SQL, framework Django, podstawy JavaScript, projekt końcowy.",
     ],

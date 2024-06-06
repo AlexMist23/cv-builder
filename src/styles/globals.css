@@ -20,7 +20,6 @@ html,
 body {
   color-scheme: light;
   max-width: 100vw;
-  overflow-x: scroll;
   background-color: rgb(50, 50, 50);
 }
 

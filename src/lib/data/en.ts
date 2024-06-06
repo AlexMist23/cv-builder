@@ -64,7 +64,7 @@ export const workExperienceList: WorkExp[] = [
   {
     role: "Intern Quality Assurance Engineer",
     company: "Luxoft",
-    date: { start: "09/2023", end: "11/2023" },
+    date: { start: "2023-09", end: "2023-12" },
     descList: [
       "Conducted a comprehensive review and analysis of digital maps data, demonstrating meticulous attention to detail and commitment to quality assurance.",
       "Annotatation of 2D/3D images and videos using specialized tools and database systems, contributing to the enhancement of data accuracy and integrity.",
@@ -74,7 +74,7 @@ export const workExperienceList: WorkExp[] = [
   {
     role: "QA Tester",
     company: "QLOC",
-    date: { start: "08/2022", end: "07/2023" },
+    date: { start: "2022-08", end: "2023-07" },
     descList: [
       "Executed diverse software tests encompassing sanity, performance, functional, and regression testing in an Agile setting",
       "Played a pivotal role in issue reporting and client feedback processes, facilitating continuous improvement within the team and Agile workflow",
@@ -83,9 +83,9 @@ export const workExperienceList: WorkExp[] = [
 ];
 export const coursesList: Course[] = [
   {
-    title: "JavaScript Specialst: React + Redux",
+    title: "JavaScript Specialist: React + Redux",
     company: "CodersLab",
-    date: { start: "12/2022", end: "05/2023" },
+    date: { start: "2022-12", end: "2023-05" },
     descList: [
       "Subject Scope: Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
     ],
@@ -93,7 +93,7 @@ export const coursesList: Course[] = [
   {
     title: "Python Developer",
     company: "CodersLab",
-    date: { start: "08/2022", end: "07/2023" },
+    date: { start: "2022-08", end: "2023-07" },
     descList: [
       "Subject Scope: Fundamentals of Python, object-oriented programming in Python, SQL databases, Django framework, basics of JavaScript, final project.",
     ],

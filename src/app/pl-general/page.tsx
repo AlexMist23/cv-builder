@@ -64,12 +64,14 @@ export default function Index() {
               }}
               profileImgUrl="/webp/cv-img.webp"
             />
-            <br />
+          </div>
+          <div className={styles.pageElement}>
             <InfoPanel contactInfo={contactInfo} />
           </div>
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
             <SectionTitle
+              lineHide={true}
               title="DOŚWIADCZENIE"
               imgSrc="/svg/sections/work_experience.svg"
             />
