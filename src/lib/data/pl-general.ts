@@ -6,7 +6,7 @@ export const info: Info = {
   name: "Aleksander Misterkiewicz",
   jobDesc: "QA Tester",
   summary:
-    "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking .",
+    "Doświadczony tester zapewnienia jakości z wiedzą w zakresie testowania, rozwoju i projektowania oprogramowania. Z zapałem wykorzystuję analityczne myślenie do rozwiązywania skomplikowanych wyzwań technologicznych. Posiadam udowodnione umiejętności w Pythonie i JavaScript, rozwijane poprzez kursy i stałe doskonalenie programistyczne. W poszukiwaniu nowych możliwości, które pozwolą mi wykorzystać moje kompetencje w praktyce.",
 };
 export const contactInfo: ContactInfo[] = [
   {
@@ -31,7 +31,11 @@ export const contactInfo: ContactInfo[] = [
     link: "https://github.com/AlexMist23",
   },
 
-  { icon: "location.svg", content: "Gdansk, Poland" },
+  {
+    icon: "location.svg",
+    content: "Gdansk, Poland",
+    link: "geo:54.3523,18.6491",
+  },
 
   {
     icon: "website.svg",
@@ -64,11 +68,11 @@ export const workExperienceList: WorkExp[] = [
   {
     role: "Intern Quality Assurance Engineer",
     company: "Luxoft",
-    date: { start: "09/2023", end: "11/2023" },
+    date: { start: "09/2023", end: "12/2023" },
     descList: [
-      "Conducted a comprehensive review and analysis of digital maps data, demonstrating meticulous attention to detail and commitment to quality assurance.",
-      "Annotatation of 2D/3D images and videos using specialized tools and database systems, contributing to the enhancement of data accuracy and integrity.",
-      "Collaborated  with team members and developers to ensure seamless communication, fostering project alignment and efficient workflow.",
+      "Przeprowadziłem kompleksowy przegląd i analizę danych map cyfrowych, wykazując skrupulatną uwagę do szczegółów i zaangażowanie w zapewnienie jakości.",
+      "Anotacja obrazów 2D/3D i filmów przy użyciu specjalistycznych narzędzi i systemów baz danych, przyczyniając się do poprawy dokładności i integralności danych.",
+      "Współpracowałem z członkami zespołu i programistami, aby zapewnić płynną komunikację, sprzyjającą wyrównaniu projektu i efektywnemu przepływowi pracy.",
     ],
   },
   {
@@ -76,8 +80,8 @@ export const workExperienceList: WorkExp[] = [
     company: "QLOC",
     date: { start: "08/2022", end: "07/2023" },
     descList: [
-      "Executed diverse software tests encompassing sanity, performance, functional, and regression testing in an Agile setting",
-      "Played a pivotal role in issue reporting and client feedback processes, facilitating continuous improvement within the team and Agile workflow",
+      "Wykonywanie testów oprogramowania: sanity, performance, functional, regression",
+      "Odgrywanie kluczowej roli w procesach raportowania problemów i informacji zwrotnej do klientów, ułatwiając ciągłe doskonalenie produktu, pracy zespołu w środowisku Agile.",
     ],
   },
 ];
@@ -87,7 +91,7 @@ export const coursesList: Course[] = [
     company: "CodersLab",
     date: { start: "12/2022", end: "05/2023" },
     descList: [
-      "Subject Scope: Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
+      "Zaawansowany JavaScript, projekt aplikacji jednostronicowej (SPA) z użyciem React Router, biblioteki React Redux i REST API.",
     ],
   },
   {
@@ -95,13 +99,13 @@ export const coursesList: Course[] = [
     company: "CodersLab",
     date: { start: "08/2022", end: "07/2023" },
     descList: [
-      "Subject Scope: Fundamentals of Python, object-oriented programming in Python, SQL databases, Django framework, basics of JavaScript, final project.",
+      "Podstawy Pythona, programowanie obiektowe, bazy danych SQL, framework Django, podstawy JavaScript, projekt końcowy.",
     ],
   },
 ];
 export const languages: Languages = [
-  { name: "English", level: 4 },
-  { name: "Polish", level: 7 },
+  { name: "Angielski", level: 4, customDesc: "Średnio-zaawansowany" },
+  { name: "Polski", level: 7, customDesc: "Ojczysty" },
 ];
 export const educationList: EducationList[] = [
   {

@@ -7,12 +7,12 @@ export const Languages = ({ languages }: Props) => {
   const ballsNumber = 6;
   return (
     <ul className={style.ul}>
-      {languages.map(({ name, level }, i) => (
+      {languages.map(({ name, level, customDesc }, i) => (
         <li className={style.li} key={i}>
           <div>
             <p className={style.name}>{name}</p>
             <p className={style.desc}>
-              {CEFRDesc[level]} - {CEFR[level]}
+              {customDesc ? customDesc : CEFRDesc[level]} - {CEFR[level]}
             </p>
           </div>
           <div className={style.balls}>
@@ -34,6 +34,7 @@ export const Languages = ({ languages }: Props) => {
 interface Language {
   name: string;
   level: number;
+  customDesc?: string;
 }
 
 enum CEFR {

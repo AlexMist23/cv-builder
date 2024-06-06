@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 2fr));
   row-gap: 1em;
-
   padding: 1em 1.5em;
   background-color: var(--color-secondary);
   color: white;
@@ -16,6 +15,6 @@
   gap: 0.5em;
 }
 
-.contactElement a:hover{
+.contactElement a:hover {
   color: var(--color-accent-light);
 }

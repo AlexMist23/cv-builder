@@ -66,52 +66,22 @@ export default function Index() {
             />
             <br />
             <InfoPanel contactInfo={contactInfo} />
-            <SectionTitle
-              title="SKILLS"
-              imgSrc="/svg/sections/skills.svg"
-              lineHide={true}
-            />
-            <br />
-            <SkillContainer skillsList={skillsList} />
           </div>
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
             <SectionTitle
-              title="WORK EXPERIENCE"
+              title="DOŚWIADCZENIE"
               imgSrc="/svg/sections/work_experience.svg"
             />
             <SectionList list={tWorkExperienceList} />
           </div>
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
-            <SectionTitle title="COURSES" imgSrc="/svg/sections/courses.svg" />
+            <SectionTitle title="KURSY" imgSrc="/svg/sections/courses.svg" />
             <SectionList list={tCoursesList} />
           </div>
-        </div>
-        <div className={styles.page}>
           <div className={styles.pageElement}>
-            <div className={styles.dotLine} />
-            <SectionTitle
-              title="EDUCATION"
-              imgSrc="/svg/sections/education.svg"
-              lineHide={true}
-            />
-            <SectionList list={tEducationList} />
-          </div>
-          <div className={styles.pageElement}>
-            <div className={styles.dotLine} />
-            <SectionTitle
-              title="PROJECTS"
-              imgSrc="/svg/sections/projects.svg"
-            />
-            <ProjectsList list={projectsList} />
-          </div>
-
-          <div className={styles.pageElement}>
-            <SectionTitle
-              title="LANGUAGES"
-              imgSrc="/svg/sections/languages.svg"
-            />
+            <SectionTitle title="JĘZYKI" imgSrc="/svg/sections/languages.svg" />
             <Languages languages={languages} />
           </div>
 
