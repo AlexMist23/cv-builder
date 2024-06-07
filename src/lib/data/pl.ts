@@ -71,7 +71,7 @@ export const workExperienceList: WorkExp[] = [
     date: { start: "2023-09", end: "2023-12" },
     descList: [
       "Przeprowadziłem kompleksowy przegląd i analizę danych map cyfrowych, wykazując skrupulatną uwagę do szczegółów i zaangażowanie w zapewnienie jakości.",
-      "Anotacja obrazów 2D/3D i filmów przy użyciu specjalistycznych narzędzi i systemów baz danych, przyczyniając się do poprawy dokładności i integralności danych.",
+      "Adnotacja obrazów 2D/3D i filmów przy użyciu specjalistycznych narzędzi i systemów baz danych, przyczyniając się do poprawy dokładności i integralności danych.",
       "Współpracowałem z członkami zespołu i programistami, aby zapewnić płynną komunikację, sprzyjającą wyrównaniu projektu i efektywnemu przepływowi pracy.",
     ],
   },

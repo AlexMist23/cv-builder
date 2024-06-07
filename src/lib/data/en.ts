@@ -116,7 +116,6 @@ export const projectsList: Project[] = [
     techStack: ["TypeScript", "Next.js", "React", "Redux"],
     demo: "https://weather-appx.vercel.app",
     repo: "https://github.com/AlexMist23/weather-app",
-    date: { start: "08/2023", end: "Present" },
     descList: [
       "This application is built using Next.js, React, and React-Redux, leveraging the power of these technologies to provide weather information.",
       "It fetches real-time weather data from the OpenWeatherMap API (https://openweathermap.org/), managing and distributing the data seamlessly through Redux for efficient rendering within React components on pages served by Next.js.",
@@ -127,7 +126,6 @@ export const projectsList: Project[] = [
     name: "Cinema Service",
     techStack: ["Python", "Django", "PostgreSQL"],
     repo: "https://github.com/AlexMist23/django_cinema_app",
-    date: { start: "11/2022", end: "02/2023" },
     descList: [
       "The Cinema Service project, developed in Python using the Django framework, showcases a blend of backend and frontend expertise",
       "Utilizing Django with a PostgreSQL database, this project demonstrates my proficiency across various languages and technologies.",
@@ -176,6 +174,6 @@ export interface Project {
   techStack: string[];
   demo?: string;
   repo: string;
-  date: { start: string; end: string | "Present" };
+  date?: { start: string; end: string | "Present" };
   descList: string[];
 }

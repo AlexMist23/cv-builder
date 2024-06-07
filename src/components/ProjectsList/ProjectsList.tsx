@@ -5,7 +5,7 @@ interface ProjectsListElement {
   techStack: string[];
   demo?: string;
   repo: string;
-  date: { start: string; end: string | "Present" };
+  date?: { start: string; end: string | "Present" | "Aktualnie" };
   descList: string[];
 }
 
@@ -15,14 +15,13 @@ interface Props {
 export const ProjectsList = ({ list }: Props) => {
   return (
     <ul className={styles.main}>
-      {list.map(({ name, techStack, demo, repo, date, descList }, i) => (
+      {list.map(({ name, techStack, demo, repo, descList }, i) => (
         <ListElement
           key={i}
           name={name}
           techStack={techStack}
           demo={demo}
           repo={repo}
-          date={date}
           descList={descList}
         />
       ))}
@@ -44,9 +43,6 @@ const ListElement = ({
       <div>
         <h2 className={styles.name}>{name}</h2>
         <h2 className={styles.techStack}>{techStack.join(", ")}</h2>
-        <p className={styles.date}>
-          {date.start} - {date.end}
-        </p>
         {demo && (
           <p className={styles.linkContainer}>
             Demo:{" "}
