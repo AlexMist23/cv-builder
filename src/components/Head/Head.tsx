@@ -22,8 +22,9 @@ export const Head = ({ info, profileImgUrl }: Props) => {
         className={styles.cvPic}
         src={profileImgUrl}
         alt=""
-        height={192}
-        width={192}
+        height={500}
+        width={500}
+        quality={100}
       />
     </div>
   );
