@@ -6,7 +6,7 @@ export const info: Info = {
   name: "Misterkiewicz Aleksander",
   jobDesc: "QA Tester",
   summary:
-    "Driven Quality Assurance Engineer with a robust foundation in software testing, development, and design. Passionate about leveraging analytical thinking to solve complex problems within the realm of software development. Demonstrated proficiency in Python and JavaScript gained through recent courses and ongoing programming pursuits. Seeking .",
+  "Quality assurance tester with expertise in software testing, development and design. I enthusiastically use analytical thinking to solve complex technology challenges. I have proven skills in Python and JavaScript, developed through courses and ongoing programming development. On the lookout for new opportunities to put my expertise into practice."
 };
 export const contactInfo: ContactInfo[] = [
   {

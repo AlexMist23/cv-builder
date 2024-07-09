@@ -6,7 +6,7 @@ export const info: Info = {
   name: "Aleksander Misterkiewicz",
   jobDesc: "QA Tester",
   summary:
-    "Doświadczony tester zapewnienia jakości z wiedzą w zakresie testowania, rozwoju i projektowania oprogramowania. Z zapałem wykorzystuję analityczne myślenie do rozwiązywania skomplikowanych wyzwań technologicznych. Posiadam udowodnione umiejętności w Pythonie i JavaScript, rozwijane poprzez kursy i stałe doskonalenie programistyczne. W poszukiwaniu nowych możliwości, które pozwolą mi wykorzystać moje kompetencje w praktyce.",
+    "Tester zapewnienia jakości z wiedzą w zakresie testowania, rozwoju i projektowania oprogramowania. Z zapałem wykorzystuję analityczne myślenie do rozwiązywania skomplikowanych wyzwań technologicznych. Posiadam udowodnione umiejętności w Pythonie i JavaScript, rozwijane poprzez kursy i stałe doskonalenie programistyczne. W poszukiwaniu nowych możliwości, które pozwolą mi wykorzystać moje kompetencje w praktyce.",
 };
 export const contactInfo: ContactInfo[] = [
   {
