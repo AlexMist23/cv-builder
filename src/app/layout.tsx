@@ -22,7 +22,7 @@ export default async function RootLayout({
     <html lang="en">
       <Providers>
         <body className={inter.className}>
-          <NavBar />
+          {process.env.NODE_ENV === 'development' && <NavBar />}
           {children}
         </body>
       </Providers>
