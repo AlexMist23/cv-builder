@@ -29,6 +29,7 @@ import {
   projectsList,
   clause,
 } from "@/lib/data/pl";
+import { StretchSection } from "@/components/StretchSection/StretchSection";
 
 export default function Index() {
   const tWorkExperienceList: SectionListProps = workExperienceList.map(
@@ -66,56 +67,56 @@ export default function Index() {
               profileImgUrl="/webp/cv-img.webp"
             />
             <br />
-            <InfoPanel contactInfo={contactInfo} />
+            <InfoPanel contactInfo={contactInfo} /> 
+          </div>
+          <StretchSection>
+<div className={styles.pageElement}>
             <SectionTitle
-              title="SKILLS"
+              title="UMIEJĘTNOŚCI"
               imgSrc="/svg/sections/skills.svg"
               lineHide={true}
             />
             <br />
             <SkillContainer skillsList={skillsList} />
           </div>
+          
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
             <SectionTitle
-              title="WORK EXPERIENCE"
+              title="DOŚWIADCZENIE"
               imgSrc="/svg/sections/work_experience.svg"
             />
             <SectionList list={tWorkExperienceList} />
           </div>
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
-            <SectionTitle title="COURSES" imgSrc="/svg/sections/courses.svg" />
+            <SectionTitle title="KURSY" imgSrc="/svg/sections/courses.svg" />
             <SectionList list={tCoursesList} />
           </div>
+          </StretchSection>
+          
         </div>
         <div className={styles.page}>
+
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
             <SectionTitle
-              title="EDUCATION"
-              imgSrc="/svg/sections/education.svg"
-              lineHide={true}
-            />
-            <SectionList list={tEducationList} />
-          </div>
-          <div className={styles.pageElement}>
-            <div className={styles.dotLine} />
-            <SectionTitle
-              title="PROJECTS"
+              title="PROJEKTY"
               imgSrc="/svg/sections/projects.svg"
             />
             <ProjectsList list={projectsList} />
           </div>
-
+              <br/>
+              <br/>
+              <br/>
           <div className={styles.pageElement}>
             <SectionTitle
-              title="LANGUAGES"
+              title="JĘZYKI"
               imgSrc="/svg/sections/languages.svg"
             />
             <Languages languages={languages} />
           </div>
-          <p className={styles.footer}>{clause}</p>
+          <footer className={styles.footer}>{clause}</footer>
         </div>
       </main>
     </>

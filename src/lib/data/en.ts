@@ -4,9 +4,9 @@ const phone = process.env.NEXT_PUBLIC_PHONE;
 
 export const info: Info = {
   name: "Misterkiewicz Aleksander",
-  jobDesc: "QA Tester",
+  jobDesc: "Junior Front-End Developer",
   summary:
-  "Quality assurance tester with expertise in software testing, development and design. I enthusiastically use analytical thinking to solve complex technology challenges. I have proven skills in Python and JavaScript, developed through courses and ongoing programming development. On the lookout for new opportunities to put my expertise into practice."
+  "Detail-oriented quality assurance tester transitioning to front-end development. Skilled in software testing, development, and design with a focus on Python and JavaScript. Seeking opportunities to apply analytical problem-solving skills and technical expertise in a junior front-end role."
 };
 export const contactInfo: ContactInfo[] = [
   {
@@ -39,45 +39,32 @@ export const contactInfo: ContactInfo[] = [
     link: "https://a-misterkiewicz.vercel.app/",
   },
 ];
-export const skillsList: string[] = [
-  "HTML5",
-  "CSS",
-  "SVG",
-  "SQL",
-
-  "JavaScript",
-  "TypeScript",
-  "Python",
-  "PostgreSQL",
-
-  "Node.js",
-  "Next.js",
-  "Django",
-  "Flask",
-
-  "React",
-  "Redux.js",
-  "JIRA",
-  "Responsive Design",
+export const skillsList: TechnicalSkill[] = [
+  { category: 'Programming Languages', skills: ['JavaScript', 'TypeScript', 'Python', 'HTML5', 'CSS', 'SQL']},
+  { category: 'Front-End Technologies', skills: ['React', 'Redux.js', 'Next.js', 'SVG', 'Responsive Design'] },
+  { category: 'Back-End Technologies', skills: ['Node.js', 'Django', 'Flask'] },
+  { category: 'Databases', skills: ['PostgreSQL'] },
+  { category: 'Version Control', skills: ['Git', 'GitHub'] },
+  { category: 'Development Tools', skills: ['Jira']}
 ];
 export const workExperienceList: WorkExp[] = [
   {
     role: "Intern Quality Assurance Engineer",
     company: "Luxoft",
-    date: { start: "2023-09", end: "2023-12" },
+    date: { start: "09/2023", end: "12/2023" },
     descList: [
-      "Conducted a comprehensive review and analysis of digital maps data, demonstrating meticulous attention to detail and commitment to quality assurance.",
-      "Annotatation of 2D/3D images and videos using specialized tools and database systems, contributing to the enhancement of data accuracy and integrity.",
-      "Collaborated  with team members and developers to ensure seamless communication, fostering project alignment and efficient workflow.",
+      "Reviewed and analyzed digital maps data, ensuring accuracy and quality standards.",
+      "Annotated 2D/3D images and videos using specialized tools, enhancing data accuracy and integrity.",
+      "Collaborated effectively with team members and developers, improving project alignment and workflow efficiency.",
     ],
   },
   {
     role: "QA Tester",
     company: "QLOC",
-    date: { start: "2022-08", end: "2023-07" },
+    date: { start: "08/2022", end: "07/2023" },
     descList: [
-      "Executed diverse software tests encompassing sanity, performance, functional, and regression testing in an Agile setting",
-      "Played a pivotal role in issue reporting and client feedback processes, facilitating continuous improvement within the team and Agile workflow",
+      "Executed sanity, performance, functional, and regression tests in an Agile environment, improving software quality.",
+      "Streamlined issue reporting and client feedback processes, contributing to continuous improvement and Agile workflow optimization.",
     ],
   },
 ];
@@ -85,7 +72,7 @@ export const coursesList: Course[] = [
   {
     title: "JavaScript Specialist: React + Redux",
     company: "CodersLab",
-    date: { start: "2022-12", end: "2023-05" },
+    date: { start: "12/2022", end: "05/2023" },
     descList: [
       "Subject Scope: Advanced JavaScript, single-page application (SPA) project using React Router, React Redux library, and REST API.",
     ],
@@ -93,7 +80,7 @@ export const coursesList: Course[] = [
   {
     title: "Python Developer",
     company: "CodersLab",
-    date: { start: "2022-08", end: "2023-07" },
+    date: { start: "08/2022", end: "07/2023" },
     descList: [
       "Subject Scope: Fundamentals of Python, object-oriented programming in Python, SQL databases, Django framework, basics of JavaScript, final project.",
     ],
@@ -117,9 +104,8 @@ export const projectsList: Project[] = [
     demo: "https://weather-appx.vercel.app",
     repo: "https://github.com/AlexMist23/weather-app",
     descList: [
-      "This application is built using Next.js, React, and React-Redux, leveraging the power of these technologies to provide weather information.",
-      "It fetches real-time weather data from the OpenWeatherMap API (https://openweathermap.org/), managing and distributing the data seamlessly through Redux for efficient rendering within React components on pages served by Next.js.",
-      "The Weather App combines functionality with an aesthetically pleasing, responsive design.",
+      "Developed a weather information app using Next.js, React, and React-Redux.",
+      "Integrated OpenWeatherMap API for real-time data, managing state with Redux and creating a responsive, aesthetically pleasing design.",
     ],
   },
   {
@@ -127,25 +113,18 @@ export const projectsList: Project[] = [
     techStack: ["Python", "Django", "PostgreSQL"],
     repo: "https://github.com/AlexMist23/django_cinema_app",
     descList: [
-      "The Cinema Service project, developed in Python using the Django framework, showcases a blend of backend and frontend expertise",
-      "Utilizing Django with a PostgreSQL database, this project demonstrates my proficiency across various languages and technologies.",
-      "The platform introduces a comprehensive cinema web application enabling users to access movie schedules across multiple locations.",
-      "The system includes a robust login system integrated with Django's powerful model structures within PostgreSQL, ensuring secure and efficient data management.",
+      "Developed a comprehensive cinema web application using Python, Django, and PostgreSQL, demonstrating full-stack proficiency.",
+      "Implemented a robust user authentication system and efficient data management using Django's model structures and PostgreSQL.",
     ],
   },
   {
     name: "CV Builder",
     techStack: ["TypeScript", "Next.js", "React"],
-    demo: "https://cv-aleksander-misterkiewicz.vercel.app",
+    demo: "https://a-misterkiewicz.vercel.app/",
     repo: "https://github.com/AlexMist23/cv-builder",
-    date: { start: "11/2023", end: "Present" },
     descList: [
-      "Crafted using TypeScript, Next.js, and React, revolutionizes the traditional resume-building process.",
-      "Application utilizes React elements to create a visually stunning and custom-tailored CV experience, elevating the presentation to an art form.",
-      "Due to the early phase of development, the tool currently provides only available React components for building usage.",
-      "In the planned futures, a user interface will be provided to further enhance the user experience.",
-      "This approach grants full control over color schemes, layout, and design, resulting in a beautifully presented CV seamlessly fitting within selected number of A3/A4-sized pages.",
-      "The CV Builder showcases my expertise in leveraging modern web technologies to create intuitive and visually engaging applications, offering a unique and personalized approach to resume creation.",
+      "Developed a custom CV creation tool using TypeScript, Next.js, and React, offering full control over design elements using React components.",
+      "Planned future enhancements include a user-friendly interface for seamless CV customization.",
     ],
   },
 ];
@@ -176,4 +155,9 @@ export interface Project {
   repo: string;
   date?: { start: string; end: string | "Present" };
   descList: string[];
+}
+
+export interface TechnicalSkill {
+  category: string;
+  skills: string[];
 }

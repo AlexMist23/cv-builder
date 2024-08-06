@@ -30,6 +30,7 @@ import {
   projectsList,
   clause,
 } from "@/lib/data/en";
+import { StretchSection } from "@/components/StretchSection/StretchSection";
 
 export default function Index() {
   const tWorkExperienceList: SectionListProps = workExperienceList.map(
@@ -68,7 +69,10 @@ export default function Index() {
             />
             <br />
             <InfoPanel contactInfo={contactInfo} />
-            <SectionTitle
+          </div>
+          <StretchSection>
+          <div className={styles.pageElement}>
+              <SectionTitle
               title="SKILLS"
               imgSrc="/svg/sections/skills.svg"
               lineHide={true}
@@ -90,17 +94,10 @@ export default function Index() {
             <SectionTitle title="COURSES" imgSrc="/svg/sections/courses.svg" />
             <SectionList list={tCoursesList} />
           </div>
+          </StretchSection>
+
         </div>
         <div className={styles.page}>
-          <div className={styles.pageElement}>
-            <div className={styles.dotLine} />
-            <SectionTitle
-              title="EDUCATION"
-              imgSrc="/svg/sections/education.svg"
-              lineHide={true}
-            />
-            <SectionList list={tEducationList} />
-          </div>
           <div className={styles.pageElement}>
             <div className={styles.dotLine} />
             <SectionTitle
@@ -109,7 +106,9 @@ export default function Index() {
             />
             <ProjectsList list={projectsList} />
           </div>
-
+              <br/>
+              <br/>
+              <br/>
           <div className={styles.pageElement}>
             <SectionTitle
               title="LANGUAGES"
@@ -117,7 +116,7 @@ export default function Index() {
             />
             <Languages languages={languages} />
           </div>
-          <p className={styles.footer}>{clause}</p>
+          <footer className={styles.footer}>{clause}</footer>
         </div>
       </main>
     </>

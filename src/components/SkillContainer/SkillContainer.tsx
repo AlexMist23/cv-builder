@@ -1,14 +1,17 @@
 import styles from "./component.module.css";
-
+import { TechnicalSkill } from "@/lib/data/en";
 interface Props {
-  skillsList: string[];
+  skillsList: TechnicalSkill[];
 }
 
 export const SkillContainer: React.FC<Props> = ({ skillsList }) => {
   return (
     <ul className={styles.skillsContainer}>
-      {skillsList.map((skill, i) => (
-        <li key={i}>{skill}</li>
+      {skillsList.map((el, i) => (
+        <li key={i}>
+          <h3>{el.category}</h3>
+          <p>{el.skills.join(', ')}</p>
+        </li>
       ))}
     </ul>
   );

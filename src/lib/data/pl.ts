@@ -4,9 +4,9 @@ const phone = process.env.NEXT_PUBLIC_PHONE;
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
-  jobDesc: "QA Tester",
+  jobDesc: "Junior Front-End Developer",
   summary:
-    "Tester zapewnienia jakości z wiedzą w zakresie testowania, rozwoju i projektowania oprogramowania. Z zapałem wykorzystuję analityczne myślenie do rozwiązywania skomplikowanych wyzwań technologicznych. Posiadam udowodnione umiejętności w Pythonie i JavaScript, rozwijane poprzez kursy i stałe doskonalenie programistyczne. W poszukiwaniu nowych możliwości, które pozwolą mi wykorzystać moje kompetencje w praktyce.",
+  "Skrupulatny tester kontroli jakości przechodzący na stanowisko front-end developera. Biegły w testowaniu oprogramowania, rozwoju i projektowaniu, ze szczególnym naciskiem na Python i JavaScript. Poszukuję możliwości zastosowania umiejętności analitycznego rozwiązywania problemów i wiedzy technicznej na stanowisku junior front-end developera."
 };
 export const contactInfo: ContactInfo[] = [
   {
@@ -33,7 +33,7 @@ export const contactInfo: ContactInfo[] = [
 
   {
     icon: "location.svg",
-    content: "Gdansk, Poland",
+    content: "Gdańsk, Polska",
     link: "geo:54.3523,18.6491",
   },
 
@@ -43,63 +43,51 @@ export const contactInfo: ContactInfo[] = [
     link: "https://a-misterkiewicz.vercel.app/",
   },
 ];
-export const skillsList: string[] = [
-  "HTML5",
-  "CSS",
-  "SVG",
-  "SQL",
-
-  "JavaScript",
-  "TypeScript",
-  "Python",
-  "PostgreSQL",
-
-  "Node.js",
-  "Next.js",
-  "Django",
-  "Flask",
-
-  "React",
-  "Redux.js",
-  "JIRA",
-  "Responsive Design",
+export const skillsList: TechnicalSkill[] = [
+  { category: 'Programming Languages', skills: ['JavaScript', 'TypeScript', 'Python', 'HTML5', 'CSS', 'SQL']},
+  { category: 'Front-End Technologies', skills: ['React', 'Redux.js', 'Next.js', 'SVG', 'Responsive Design'] },
+  { category: 'Back-End Technologies', skills: ['Node.js', 'Django', 'Flask'] },
+  { category: 'Databases', skills: ['PostgreSQL'] },
+  { category: 'Version Control', skills: ['Git', 'GitHub'] },
+  { category: 'Development Tools', skills: ['Jira']}
 ];
 export const workExperienceList: WorkExp[] = [
   {
     role: "Intern Quality Assurance Engineer",
     company: "Luxoft",
-    date: { start: "2023-09", end: "2023-12" },
+    date: { start: "09/2023", end: "12/2023" },
     descList: [
-      "Przeprowadziłem kompleksowy przegląd i analizę danych map cyfrowych, wykazując skrupulatną uwagę do szczegółów i zaangażowanie w zapewnienie jakości.",
-      "Adnotacja obrazów 2D/3D i filmów przy użyciu specjalistycznych narzędzi i systemów baz danych, przyczyniając się do poprawy dokładności i integralności danych.",
-      "Współpracowałem z członkami zespołu i programistami, aby zapewnić płynną komunikację, sprzyjającą wyrównaniu projektu i efektywnemu przepływowi pracy.",
+      "Przeglądałem i analizowałem dane map cyfrowych, zapewniając dokładność i standardy jakości.",
+      "Anotowałem obrazy i filmy 2D/3D przy użyciu specjalistycznych narzędzi, zwiększając dokładność i integralność danych.",
+      "Efektywnie współpracowałem z członkami zespołu i programistami, poprawiając dostosowanie projektu i efektywność przepływu pracy.",
     ],
   },
   {
     role: "QA Tester",
     company: "QLOC",
-    date: { start: "2022-08", end: "2023-07" },
+    date: { start: "08/2022", end: "07/2023" },
     descList: [
-      "Wykonywanie testów oprogramowania: sanity, performance, functional, regression",
-      "Odgrywanie kluczowej roli w procesach raportowania problemów i informacji zwrotnej do klientów, ułatwiając ciągłe doskonalenie produktu, pracy zespołu w środowisku Agile.",
+      "Przeprowadzałem testy sanity, wydajnościowe, funkcjonalne i regresyjne w środowisku Agile, poprawiając jakość oprogramowania.",
+      "Usprawniłem procesy raportowania problemów i zbierania opinii klientów, przyczyniając się do ciągłego doskonalenia i optymalizacji przepływu pracy Agile.",
     ],
   },
 ];
+
 export const coursesList: Course[] = [
   {
     title: "JavaScript Specialist: React + Redux",
     company: "CodersLab",
-    date: { start: "2022-12", end: "2023-05" },
+    date: { start: "12/2022", end: "05/2023" },
     descList: [
-      "Zaawansowany JavaScript, projekt aplikacji jednostronicowej (SPA) z użyciem React Router, biblioteki React Redux i REST API.",
+      "Zakres tematyczny: Zaawansowany JavaScript, projekt aplikacji jednostronicowej (SPA) z użyciem React Router, biblioteki React Redux i REST API.",
     ],
   },
   {
     title: "Python Developer",
     company: "CodersLab",
-    date: { start: "2022-08", end: "2023-07" },
+    date: { start: "08/2022", end: "07/2023" },
     descList: [
-      "Podstawy Pythona, programowanie obiektowe, bazy danych SQL, framework Django, podstawy JavaScript, projekt końcowy.",
+      "Zakres tematyczny: Podstawy Pythona, programowanie obiektowe w Pythonie, bazy danych SQL, framework Django, podstawy JavaScript, projekt końcowy.",
     ],
   },
 ];
@@ -120,38 +108,28 @@ export const projectsList: Project[] = [
     techStack: ["TypeScript", "Next.js", "React", "Redux"],
     demo: "https://weather-appx.vercel.app",
     repo: "https://github.com/AlexMist23/weather-app",
-    date: { start: "08/2023", end: "Present" },
     descList: [
-      "This application is built using Next.js, React, and React-Redux, leveraging the power of these technologies to provide weather information.",
-      "It fetches real-time weather data from the OpenWeatherMap API (https://openweathermap.org/), managing and distributing the data seamlessly through Redux for efficient rendering within React components on pages served by Next.js.",
-      "The Weather App combines functionality with an aesthetically pleasing, responsive design.",
+      "Opracowałem aplikację pogodową przy użyciu Next.js, React i React-Redux.",
+      "Zintegrowałem API OpenWeatherMap dla danych w czasie rzeczywistym, zarządzając stanem za pomocą Redux i tworząc responsywny, estetyczny design.",
     ],
   },
   {
     name: "Cinema Service",
     techStack: ["Python", "Django", "PostgreSQL"],
     repo: "https://github.com/AlexMist23/django_cinema_app",
-    date: { start: "11/2022", end: "02/2023" },
     descList: [
-      "The Cinema Service project, developed in Python using the Django framework, showcases a blend of backend and frontend expertise",
-      "Utilizing Django with a PostgreSQL database, this project demonstrates my proficiency across various languages and technologies.",
-      "The platform introduces a comprehensive cinema web application enabling users to access movie schedules across multiple locations.",
-      "The system includes a robust login system integrated with Django's powerful model structures within PostgreSQL, ensuring secure and efficient data management.",
+      "Opracowałem kompleksową aplikację internetową dla kin przy użyciu Python, Django i PostgreSQL, demonstrując pełne umiejętności full-stack.",
+      "Wdrożyłem solidny system uwierzytelniania użytkowników i efektywne zarządzanie danymi przy użyciu struktur modeli Django i PostgreSQL.",
     ],
   },
   {
     name: "CV Builder",
     techStack: ["TypeScript", "Next.js", "React"],
-    demo: "https://cv-aleksander-misterkiewicz.vercel.app",
+    demo: "https://a-misterkiewicz.vercel.app/",
     repo: "https://github.com/AlexMist23/cv-builder",
-    date: { start: "11/2023", end: "Present" },
     descList: [
-      "Crafted using TypeScript, Next.js, and React, revolutionizes the traditional resume-building process.",
-      "Application utilizes React elements to create a visually stunning and custom-tailored CV experience, elevating the presentation to an art form.",
-      "Due to the early phase of development, the tool currently provides only available React components for building usage.",
-      "In the planned futures, a user interface will be provided to further enhance the user experience.",
-      "This approach grants full control over color schemes, layout, and design, resulting in a beautifully presented CV seamlessly fitting within selected number of A3/A4-sized pages.",
-      "The CV Builder showcases my expertise in leveraging modern web technologies to create intuitive and visually engaging applications, offering a unique and personalized approach to resume creation.",
+      "Opracowałem niestandardowe narzędzie do tworzenia CV przy użyciu TypeScript, Next.js i React, oferujące pełną kontrolę nad elementami projektu przy użyciu komponentów React.",
+      "Zaplanowane przyszłe ulepszenia obejmują przyjazny dla użytkownika interfejs do bezproblemowego dostosowywania CV.",
     ],
   },
 ];
@@ -181,6 +159,11 @@ export interface Project {
   techStack: string[];
   demo?: string;
   repo: string;
-  date: { start: string; end: string | "Present" };
+  date?: { start: string; end: string | "Present" };
   descList: string[];
+}
+
+export interface TechnicalSkill {
+  category: string;
+  skills: string[];
 }

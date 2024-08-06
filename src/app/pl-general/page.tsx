@@ -29,6 +29,7 @@ import {
   projectsList,
   clause,
 } from "@/lib/data/pl-general";
+import { StretchSection } from "@/components/StretchSection/StretchSection";
 export default function Index() {
   const tWorkExperienceList: SectionListProps = workExperienceList.map(
     (workExp) => ({
@@ -64,11 +65,13 @@ export default function Index() {
               }}
               profileImgUrl="/webp/cv-img.webp"
             />
-          </div>
-          <div className={styles.pageElement}>
+            <br/>
+            <div className={styles.pageElement}>
             <InfoPanel contactInfo={contactInfo} />
+            </div>
           </div>
-          <div className={styles.pageElement}>
+          <StretchSection>
+              <div className={styles.pageElement}>
             <div className={styles.dotLine} />
             <SectionTitle
               lineHide={true}
@@ -86,8 +89,10 @@ export default function Index() {
             <SectionTitle title="JĘZYKI" imgSrc="/svg/sections/languages.svg" />
             <Languages languages={languages} />
           </div>
+          </StretchSection>
+          
 
-          <p className={styles.footer}>{clause}</p>
+          <footer className={styles.footer}>{clause}</footer>
         </div>
       </main>
     </>

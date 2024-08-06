@@ -4,9 +4,9 @@ const phone = process.env.NEXT_PUBLIC_PHONE;
 
 export const info: Info = {
   name: "Aleksander Misterkiewicz",
-  jobDesc: "QA Tester",
-  summary:
-    "Tester zapewnienia jakości z wiedzą w zakresie testowania, rozwoju i projektowania oprogramowania. Z zapałem wykorzystuję analityczne myślenie do rozwiązywania skomplikowanych wyzwań technologicznych. Posiadam udowodnione umiejętności w Pythonie i JavaScript, rozwijane poprzez kursy i stałe doskonalenie programistyczne. W poszukiwaniu nowych możliwości, które pozwolą mi wykorzystać moje kompetencje w praktyce.",
+  jobDesc: "Junior Front-End Developer",
+  summary:   "Skrupulatny tester kontroli jakości przechodzący na stanowisko front-end developera. Biegły w testowaniu oprogramowania, rozwoju i projektowaniu, ze szczególnym naciskiem na Python i JavaScript. Poszukuję możliwości zastosowania umiejętności analitycznego rozwiązywania problemów i wiedzy technicznej na stanowisku junior front-end developera."
+
 };
 export const contactInfo: ContactInfo[] = [
   {
@@ -78,9 +78,9 @@ export const workExperienceList: WorkExp[] = [
     company: "Luxoft",
     date: { start: "2023-09", end: "2023-12" },
     descList: [
-      "Przeprowadziłem kompleksowy przegląd i analizę danych map cyfrowych, wykazując skrupulatną uwagę do szczegółów i zaangażowanie w zapewnienie jakości.",
-      "Adnotacja obrazów 2D/3D i filmów przy użyciu specjalistycznych narzędzi i systemów baz danych, przyczyniając się do poprawy dokładności i integralności danych.",
-      "Współpracowałem z członkami zespołu i programistami, aby zapewnić płynną komunikację, sprzyjającą wyrównaniu projektu i efektywnemu przepływowi pracy.",
+      "Przeglądałem i analizowałem dane map cyfrowych, zapewniając dokładność i standardy jakości.",
+      "Anotowałem obrazy i filmy 2D/3D przy użyciu specjalistycznych narzędzi, zwiększając dokładność i integralność danych.",
+      "Efektywnie współpracowałem z członkami zespołu i programistami, poprawiając dostosowanie projektu i efektywność przepływu pracy.",
     ],
   },
   {
