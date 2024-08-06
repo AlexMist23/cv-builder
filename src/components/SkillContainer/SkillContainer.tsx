@@ -9,7 +9,7 @@ export const SkillContainer: React.FC<Props> = ({ skillsList }) => {
     <ul className={styles.skillsContainer}>
       {skillsList.map((el, i) => (
         <li key={i}>
-          <h3>{el.category}</h3>
+          <h3 className={styles.h3}>{el.category}</h3>
           <p>{el.skills.join(', ')}</p>
         </li>
       ))}
